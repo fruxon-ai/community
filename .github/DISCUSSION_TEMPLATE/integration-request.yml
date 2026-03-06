@@ -1,0 +1,45 @@
+title: "[Integration] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for requesting a new integration! This helps us prioritize which agent frameworks to support next.
+
+  - type: input
+    id: framework
+    attributes:
+      label: Framework / Library
+      description: Name of the agent framework you'd like Fruxon to support.
+      placeholder: e.g. AutoGen, Semantic Kernel, Haystack
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: Link to the framework's docs or repo.
+      placeholder: https://github.com/...
+    validations:
+      required: false
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use case
+      description: Briefly describe what you're building and how you'd use this integration.
+      placeholder: Tell us about your project...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How important is this for you?
+      options:
+        - Nice to have
+        - Important — I'd use it soon
+        - Blocking — I need this to adopt Fruxon
+    validations:
+      required: true
