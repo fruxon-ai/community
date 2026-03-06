@@ -28,13 +28,12 @@ body:
     id: auth-type
     attributes:
       label: Authentication methods
-      description: How does this service authenticate API requests? Select all that apply.
+      description: How does this service authenticate API requests? Select all that apply. Leave blank if not sure.
       options:
         - label: OAuth2
         - label: API key
         - label: Bearer token
         - label: Basic auth (username/password)
-        - label: Not sure
 
   - type: textarea
     id: actions
