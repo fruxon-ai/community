@@ -24,19 +24,17 @@ body:
     validations:
       required: false
 
-  - type: dropdown
+  - type: checkboxes
     id: auth-type
     attributes:
-      label: Authentication method
-      description: How does this service authenticate API requests?
+      label: Authentication methods
+      description: How does this service authenticate API requests? Select all that apply.
       options:
-        - OAuth2
-        - API key
-        - Bearer token
-        - Basic auth (username/password)
-        - Not sure
-    validations:
-      required: true
+        - label: OAuth2
+        - label: API key
+        - label: Bearer token
+        - label: Basic auth (username/password)
+        - label: Not sure
 
   - type: textarea
     id: actions
